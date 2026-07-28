@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img" aria-labelledby="title desc">
-  <title id="title">Workflow</title>
-  <desc id="desc">Four-step workflow: input theme, select mode, choose template + art style, confirm mood + title</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180" role="img" aria-labelledby="title desc">
+  <title id="title">Workflow v5.0</title>
+  <desc id="desc">Five-step v5.0 workflow: input theme, select content type, choose mood, confirm title, AI auto-matches and outputs</desc>
 
   <defs>
     <pattern id="dots-wf" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -8,72 +8,94 @@
     </pattern>
   </defs>
 
-  <rect width="1200" height="200" fill="#87CEEB"/>
-  <rect width="1200" height="200" fill="url(#dots-wf)"/>
+  <rect width="1200" height="180" fill="#87CEEB"/>
+  <rect width="1200" height="180" fill="url(#dots-wf)"/>
 
-  <rect x="5" y="5" width="1190" height="190" rx="0" fill="none" stroke="#000" stroke-width="8"/>
-  <rect x="9" y="9" width="1182" height="182" rx="0" fill="none" stroke="#fff" stroke-width="3"/>
-  <rect x="12" y="12" width="1176" height="176" rx="0" fill="#fff"/>
+  <rect x="5" y="5" width="1190" height="170" rx="0" fill="none" stroke="#000" stroke-width="8"/>
+  <rect x="9" y="9" width="1182" height="162" rx="0" fill="none" stroke="#fff" stroke-width="3"/>
+  <rect x="12" y="12" width="1176" height="156" rx="0" fill="#fff"/>
 
-  <!-- Step 1 -->
-  <g transform="translate(45, 38)">
-    <circle cx="34" cy="34" r="34" fill="#FFD700" stroke="#000" stroke-width="2.5"/>
-    <text x="34" y="30" font-family="Georgia, serif" font-size="24" font-style="italic" font-weight="900" fill="#000" text-anchor="middle">01</text>
-    <text x="34" y="46" font-family="-apple-system, sans-serif" font-size="11" fill="#000" text-anchor="middle" font-weight="700">STEP</text>
-    <text x="86" y="24" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="17" fill="#000" font-weight="700">输入主题</text>
-    <text x="86" y="46" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#333" font-weight="500">露营 / 聚会 / 睡前</text>
-    <text x="86" y="64" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#666">或直接说"随机"</text>
-  </g>
-  <!-- Step bottom: 38+64=102, content bottom: 176. Gap: 74px -->
+  <!-- Step positions (evenly distributed, content area x=24..1164 = 1140px usable) -->
+  <!-- Step 1 at x=24: circle 30, text starts 68, arrow at 24+68+120=212 -->
+  <!-- Step 2 at x=248: arrow at 248+68+120=436 -->
+  <!-- Step 3 at x=472: arrow at 472+68+120=660 -->
+  <!-- Step 4 at x=696: arrow at 696+68+120=884 -->
+  <!-- Step 5 at x=920: text ends ~920+68+150=1138, within 1164 -->
 
-  <g transform="translate(280, 72)" opacity="0.4">
-    <line x1="0" y1="0" x2="36" y2="0" stroke="#000" stroke-width="2.5"/>
-    <polygon points="36,-6 48,0 36,6" fill="#000"/>
-  </g>
-
-  <!-- Step 2 -->
-  <g transform="translate(340, 38)">
-    <circle cx="34" cy="34" r="34" fill="#FFD700" stroke="#000" stroke-width="2.5"/>
-    <text x="34" y="30" font-family="Georgia, serif" font-size="24" font-style="italic" font-weight="900" fill="#000" text-anchor="middle">02</text>
-    <text x="34" y="46" font-family="-apple-system, sans-serif" font-size="11" fill="#000" text-anchor="middle" font-weight="700">STEP</text>
-    <text x="86" y="24" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="17" fill="#000" font-weight="700">选择模式</text>
-    <text x="86" y="46" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#333" font-weight="500">模板 / 自由 / 复刻</text>
-    <text x="86" y="64" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#666">三种生成模式可选</text>
+  <!-- Step 1: 输入主题 -->
+  <g transform="translate(24, 32)">
+    <circle cx="28" cy="28" r="28" fill="#FFD700" stroke="#000" stroke-width="2.5"/>
+    <text x="28" y="25" font-family="Georgia, serif" font-size="18" font-style="italic" font-weight="900" fill="#000" text-anchor="middle">01</text>
+    <text x="28" y="39" font-family="-apple-system, sans-serif" font-size="8" fill="#000" text-anchor="middle" font-weight="700">STEP</text>
+    <text x="68" y="20" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#000" font-weight="700">输入主题</text>
+    <text x="68" y="38" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333" font-weight="500">露营/睡前/热点</text>
+    <text x="68" y="54" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="10" fill="#666">或说"随机"</text>
   </g>
 
-  <g transform="translate(575, 72)" opacity="0.4">
-    <line x1="0" y1="0" x2="36" y2="0" stroke="#000" stroke-width="2.5"/>
-    <polygon points="36,-6 48,0 36,6" fill="#000"/>
+  <g transform="translate(220, 60)" opacity="0.4">
+    <line x1="0" y1="0" x2="22" y2="0" stroke="#000" stroke-width="2.5"/>
+    <polygon points="22,-4 30,0 22,4" fill="#000"/>
   </g>
 
-  <!-- Step 3 -->
-  <g transform="translate(635, 38)">
-    <circle cx="34" cy="34" r="34" fill="#FFD700" stroke="#000" stroke-width="2.5"/>
-    <text x="34" y="30" font-family="Georgia, serif" font-size="24" font-style="italic" font-weight="900" fill="#000" text-anchor="middle">03</text>
-    <text x="34" y="46" font-family="-apple-system, sans-serif" font-size="11" fill="#000" text-anchor="middle" font-weight="700">STEP</text>
-    <text x="86" y="24" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="17" fill="#000" font-weight="700">模板 + 画风</text>
-    <text x="86" y="46" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#333" font-weight="500">6+2 模板 + 12 画风</text>
-    <text x="86" y="64" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#666">AI 智能推荐最佳组合</text>
+  <!-- Step 2: 选内容类型 -->
+  <g transform="translate(258, 32)">
+    <circle cx="28" cy="28" r="28" fill="#FFD700" stroke="#000" stroke-width="2.5"/>
+    <text x="28" y="25" font-family="Georgia, serif" font-size="18" font-style="italic" font-weight="900" fill="#000" text-anchor="middle">02</text>
+    <text x="28" y="39" font-family="-apple-system, sans-serif" font-size="8" fill="#000" text-anchor="middle" font-weight="700">STEP</text>
+    <text x="68" y="20" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#000" font-weight="700">选内容类型</text>
+    <text x="68" y="38" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333" font-weight="500">知识/互动/共鸣</text>
+    <text x="68" y="54" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="10" fill="#666">6种类型</text>
   </g>
 
-  <g transform="translate(870, 72)" opacity="0.4">
-    <line x1="0" y1="0" x2="36" y2="0" stroke="#000" stroke-width="2.5"/>
-    <polygon points="36,-6 48,0 36,6" fill="#000"/>
+  <g transform="translate(450, 60)" opacity="0.4">
+    <line x1="0" y1="0" x2="22" y2="0" stroke="#000" stroke-width="2.5"/>
+    <polygon points="22,-4 30,0 22,4" fill="#000"/>
   </g>
 
-  <!-- Step 4 -->
-  <g transform="translate(930, 38)">
-    <circle cx="34" cy="34" r="34" fill="#FF0000" stroke="#000" stroke-width="2.5"/>
-    <text x="34" y="30" font-family="Georgia, serif" font-size="24" font-style="italic" font-weight="900" fill="#fff" text-anchor="middle">04</text>
-    <text x="34" y="46" font-family="-apple-system, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="700">STEP</text>
-    <text x="86" y="24" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="17" fill="#000" font-weight="700">一键输出</text>
-    <text x="86" y="46" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#333" font-weight="500">封面提示词 + 文案</text>
-    <text x="86" y="64" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#666">标题 / 正文 / 话题标签</text>
+  <!-- Step 3: 选情绪基调 -->
+  <g transform="translate(488, 32)">
+    <circle cx="28" cy="28" r="28" fill="#FFD700" stroke="#000" stroke-width="2.5"/>
+    <text x="28" y="25" font-family="Georgia, serif" font-size="18" font-style="italic" font-weight="900" fill="#000" text-anchor="middle">03</text>
+    <text x="28" y="39" font-family="-apple-system, sans-serif" font-size="8" fill="#000" text-anchor="middle" font-weight="700">STEP</text>
+    <text x="68" y="20" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#000" font-weight="700">选情绪基调</text>
+    <text x="68" y="38" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333" font-weight="500">松弛/幽默/治愈</text>
+    <text x="68" y="54" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="10" fill="#666">6种情绪</text>
   </g>
-  <!-- Right edge: 930+86+~135=1151, within 1176. Gap=25px -->
 
-  <!-- Bottom separator -->
-  <line x1="45" y1="148" x2="1155" y2="148" stroke="#000" stroke-width="2" stroke-dasharray="8 4"/>
-  <circle cx="45" cy="148" r="4" fill="#FF0000"/>
-  <circle cx="1155" cy="148" r="4" fill="#FF0000"/>
+  <g transform="translate(680, 60)" opacity="0.4">
+    <line x1="0" y1="0" x2="22" y2="0" stroke="#000" stroke-width="2.5"/>
+    <polygon points="22,-4 30,0 22,4" fill="#000"/>
+  </g>
+
+  <!-- Step 4: 确认标题 -->
+  <g transform="translate(718, 32)">
+    <circle cx="28" cy="28" r="28" fill="#FFD700" stroke="#000" stroke-width="2.5"/>
+    <text x="28" y="25" font-family="Georgia, serif" font-size="18" font-style="italic" font-weight="900" fill="#000" text-anchor="middle">04</text>
+    <text x="28" y="39" font-family="-apple-system, sans-serif" font-size="8" fill="#000" text-anchor="middle" font-weight="700">STEP</text>
+    <text x="68" y="20" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#000" font-weight="700">确认标题</text>
+    <text x="68" y="38" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333" font-weight="500">3候选/自定义</text>
+    <text x="68" y="54" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="10" fill="#666">8种公式</text>
+  </g>
+
+  <g transform="translate(908, 60)" opacity="0.4">
+    <line x1="0" y1="0" x2="18" y2="0" stroke="#000" stroke-width="2.5"/>
+    <polygon points="18,-4 26,0 18,4" fill="#000"/>
+  </g>
+
+  <!-- Step 5: 一键输出 -->
+  <g transform="translate(942, 32)">
+    <circle cx="28" cy="28" r="28" fill="#FF0000" stroke="#000" stroke-width="2.5"/>
+    <text x="28" y="25" font-family="Georgia, serif" font-size="18" font-style="italic" font-weight="900" fill="#fff" text-anchor="middle">05</text>
+    <text x="28" y="39" font-family="-apple-system, sans-serif" font-size="8" fill="#fff" text-anchor="middle" font-weight="700">STEP</text>
+    <text x="68" y="20" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#000" font-weight="700">一键输出</text>
+    <text x="68" y="38" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333" font-weight="500">AI匹配模板/风格/配色</text>
+    <text x="68" y="54" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="10" fill="#666">提示词+完整文案</text>
+  </g>
+  <!-- Step5 right edge: 942+68+145 ≈ 1155, within 1164. Gap=9px -->
+
+  <!-- Bottom separator (moved up) -->
+  <line x1="24" y1="118" x2="1164" y2="118" stroke="#000" stroke-width="2" stroke-dasharray="8 4"/>
+  <circle cx="24" cy="118" r="4" fill="#FF0000"/>
+  <circle cx="1164" cy="118" r="4" fill="#FF0000"/>
+  <!-- Bottom content at 118, content bottom at 168. Gap=38px -->
 </svg>

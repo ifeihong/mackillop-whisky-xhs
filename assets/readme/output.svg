@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
-  <title id="title">Output Structure</title>
-  <desc id="desc">Each generation produces two parts: image generation prompt and Xiaohongshu full copy</desc>
+  <title id="title">Output Structure v5.0</title>
+  <desc id="desc">Each generation produces two parts: structured image generation prompt and complete Xiaohongshu copy</desc>
 
   <defs>
     <pattern id="dots-op" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -15,56 +15,62 @@
   <rect x="9" y="9" width="1182" height="262" rx="0" fill="none" stroke="#fff" stroke-width="3"/>
   <rect x="12" y="12" width="1176" height="256" rx="0" fill="#fff"/>
 
-  <!-- Input section: x=40..290, y=40..230 -->
-  <g transform="translate(40, 45)">
-    <rect x="0" y="0" width="250" height="190" rx="12" fill="#fff" stroke="#000" stroke-width="2.5"/>
-    <rect x="0" y="0" width="250" height="42" rx="12" fill="#000"/>
-    <rect x="0" y="24" width="250" height="18" fill="#000"/>
-    <text x="125" y="28" font-family="-apple-system, sans-serif" font-size="15" fill="#FFD700" text-anchor="middle" font-weight="700" letter-spacing="2">INPUT</text>
-    <line x1="0" y1="42" x2="250" y2="42" stroke="#000" stroke-width="1.5"/>
-    <!-- Card items: top padding 20, spacing 48 -->
-    <rect x="20" y="62" width="210" height="42" rx="8" fill="#FFD700" fill-opacity="0.12" stroke="#FFD700" stroke-width="1.2"/>
-    <text x="125" y="89" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="16" fill="#000" text-anchor="middle" font-weight="600">参考图 1 · 产品照片</text>
-    <rect x="20" y="116" width="210" height="42" rx="8" fill="#FFD700" fill-opacity="0.12" stroke="#FFD700" stroke-width="1.2"/>
-    <text x="125" y="143" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="16" fill="#000" text-anchor="middle" font-weight="600">参考图 2 · 品牌 LOGO</text>
-  </g>
-  <!-- Bottom: 45+190=235, within 256. Gap=21px -->
-
-  <!-- Arrow: x=300..370 -->
-  <g transform="translate(305, 140)" opacity="0.4">
-    <line x1="0" y1="0" x2="48" y2="0" stroke="#000" stroke-width="2.5"/>
-    <polygon points="48,-6 60,0 48,6" fill="#000"/>
+  <!-- Cards at y=38, height 195, bottom at y=233, content bottom at y=268, gap=35px -->
+  <!-- Input section: x=40..280 -->
+  <g transform="translate(40, 38)">
+    <rect x="0" y="0" width="240" height="195" rx="12" fill="#fff" stroke="#000" stroke-width="2.5"/>
+    <rect x="0" y="0" width="240" height="42" rx="12" fill="#000"/>
+    <rect x="0" y="26" width="240" height="16" fill="#000"/>
+    <text x="120" y="29" font-family="-apple-system, sans-serif" font-size="14" fill="#FFD700" text-anchor="middle" font-weight="700" letter-spacing="2">INPUT</text>
+    <line x1="0" y1="42" x2="240" y2="42" stroke="#000" stroke-width="1.5"/>
+    <rect x="20" y="62" width="200" height="40" rx="8" fill="#FFD700" fill-opacity="0.12" stroke="#FFD700" stroke-width="1.2"/>
+    <text x="120" y="87" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#000" text-anchor="middle" font-weight="600">参考图 1 · 产品照片</text>
+    <rect x="20" y="114" width="200" height="40" rx="8" fill="#FFD700" fill-opacity="0.12" stroke="#FFD700" stroke-width="1.2"/>
+    <text x="120" y="139" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#000" text-anchor="middle" font-weight="600">参考图 2 · 品牌 LOGO</text>
+    <text x="120" y="178" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#666" text-anchor="middle">+ 主题 / 内容类型 / 情绪</text>
+    <!-- Last text baseline 178 + ~3 = 181, card bottom 195, gap = 14px -->
   </g>
 
-  <!-- Output 1: Prompt, x=380..770, y=45..235 -->
-  <g transform="translate(380, 45)">
-    <rect x="0" y="0" width="390" height="190" rx="12" fill="#fff" stroke="#000" stroke-width="2.5"/>
-    <rect x="0" y="0" width="390" height="42" rx="12" fill="#FF0000"/>
-    <rect x="0" y="24" width="390" height="18" fill="#FF0000"/>
-    <text x="195" y="28" font-family="-apple-system, sans-serif" font-size="15" fill="#fff" text-anchor="middle" font-weight="700" letter-spacing="1">OUTPUT 1 · 图片生成提示词</text>
-    <line x1="0" y1="42" x2="390" y2="42" stroke="#000" stroke-width="1.5"/>
-    <!-- Lines: y=76, y=106, y=136. Spacing: 30px -->
-    <text x="24" y="78" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="17" fill="#000" font-weight="600">结构化中文提示词</text>
-    <text x="24" y="108" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="16" fill="#333" font-weight="500">3:4 竖版 · 产品角度锁定 · 品牌 LOGO 植入</text>
-    <text x="24" y="138" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#666">适配 GPT Image2 / Seedream5.0 / Nano Banana Pro</text>
-  </g>
-  <!-- Right edge: 380+390=770, within 1176 -->
-
-  <!-- Plus sign: x=780..820 -->
-  <g transform="translate(790, 140)" opacity="0.5">
-    <text x="20" y="6" font-family="-apple-system, sans-serif" font-size="24" fill="#000" font-weight="900" text-anchor="middle">+</text>
+  <!-- Arrow -->
+  <g transform="translate(295, 136)" opacity="0.4">
+    <line x1="0" y1="0" x2="42" y2="0" stroke="#000" stroke-width="2.5"/>
+    <polygon points="42,-6 54,0 42,6" fill="#000"/>
   </g>
 
-  <!-- Output 2: Copy, x=840..1140, y=45..235 -->
-  <g transform="translate(840, 45)">
-    <rect x="0" y="0" width="300" height="190" rx="12" fill="#fff" stroke="#000" stroke-width="2.5"/>
-    <rect x="0" y="0" width="300" height="42" rx="12" fill="#000"/>
-    <rect x="0" y="24" width="300" height="18" fill="#000"/>
-    <text x="150" y="28" font-family="-apple-system, sans-serif" font-size="15" fill="#FFD700" text-anchor="middle" font-weight="700" letter-spacing="1">OUTPUT 2 · 小红书文案</text>
-    <line x1="0" y1="42" x2="300" y2="42" stroke="#000" stroke-width="1.5"/>
-    <text x="24" y="78" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="17" fill="#000" font-weight="600">吸睛标题（3 候选）</text>
-    <text x="24" y="108" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="16" fill="#333" font-weight="500">400-800 字正文 · emoji</text>
-    <text x="24" y="138" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#666">10-15 个话题标签</text>
+  <!-- Output 1: Prompt, x=365..735 -->
+  <g transform="translate(365, 38)">
+    <rect x="0" y="0" width="370" height="195" rx="12" fill="#fff" stroke="#000" stroke-width="2.5"/>
+    <rect x="0" y="0" width="370" height="42" rx="12" fill="#FF0000"/>
+    <rect x="0" y="26" width="370" height="16" fill="#FF0000"/>
+    <text x="185" y="29" font-family="-apple-system, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="700" letter-spacing="1">OUTPUT 1 · 图片生成提示词</text>
+    <line x1="0" y1="42" x2="370" y2="42" stroke="#000" stroke-width="1.5"/>
+    <text x="24" y="74" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="15" fill="#000" font-weight="700">结构化中文提示词</text>
+    <text x="24" y="100" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="13" fill="#333" font-weight="500">3:4 竖版 · 主标题≥12%高度</text>
+    <text x="24" y="124" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="13" fill="#333" font-weight="500">产品角度锁定 · LOGO 植入</text>
+    <text x="24" y="148" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#666">适配 GPT Image2 / Seedream5.0 / Nano Banana Pro</text>
+    <rect x="24" y="162" width="130" height="18" rx="4" fill="#FFD700" fill-opacity="0.3" stroke="#FFD700" stroke-width="0.8"/>
+    <text x="89" y="175" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#000" text-anchor="middle" font-weight="600">粗细字对比 · 场景化</text>
+    <!-- Tag bottom at 180, card bottom 195, gap = 15px -->
   </g>
-  <!-- Right edge: 840+300=1140, within 1176. Gap=36px -->
+
+  <!-- Plus sign -->
+  <g transform="translate(755, 136)" opacity="0.5">
+    <text x="20" y="6" font-family="-apple-system, sans-serif" font-size="22" fill="#000" font-weight="900" text-anchor="middle">+</text>
+  </g>
+
+  <!-- Output 2: Copy, x=815..1135 -->
+  <g transform="translate(815, 38)">
+    <rect x="0" y="0" width="320" height="195" rx="12" fill="#fff" stroke="#000" stroke-width="2.5"/>
+    <rect x="0" y="0" width="320" height="42" rx="12" fill="#000"/>
+    <rect x="0" y="26" width="320" height="16" fill="#000"/>
+    <text x="160" y="29" font-family="-apple-system, sans-serif" font-size="14" fill="#FFD700" text-anchor="middle" font-weight="700" letter-spacing="1">OUTPUT 2 · 小红书文案</text>
+    <line x1="0" y1="42" x2="320" y2="42" stroke="#000" stroke-width="1.5"/>
+    <text x="24" y="74" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="15" fill="#000" font-weight="700">吸睛标题（3 候选）</text>
+    <text x="24" y="100" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="13" fill="#333" font-weight="500">400-800 字正文 · emoji · 钩子开头</text>
+    <text x="24" y="124" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="13" fill="#333" font-weight="500">6 种 CTA 行动号召轮换</text>
+    <text x="24" y="148" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#666">10-15 个话题标签 · 无容量数字</text>
+    <rect x="24" y="162" width="150" height="18" rx="4" fill="#FF0000" fill-opacity="0.1" stroke="#FF0000" stroke-width="0.8"/>
+    <text x="99" y="175" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#000" text-anchor="middle" font-weight="600">文案补充图上信息 · 不重复</text>
+    <!-- Tag bottom at 180, card bottom 195, gap = 15px -->
+  </g>
 </svg>
