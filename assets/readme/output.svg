@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="320" viewBox="0 0 1400 320" role="img" aria-labelledby="title desc">
   <title id="title">Output Structure</title>
-  <desc id="desc">Each generation produces: image prompt + Xiaohongshu copy + optional Douyin/Video Account short video script</desc>
+  <desc id="desc">Each generation produces: one AI image prompt + three platform packages (Xiaohongshu/Douyin/Video Account)</desc>
 
   <defs>
     <pattern id="dots-op" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -13,99 +13,112 @@
     </linearGradient>
   </defs>
 
-  <rect width="1200" height="300" fill="url(#op-bg)"/>
-  <rect width="1200" height="300" fill="url(#dots-op)"/>
+  <rect width="1400" height="320" fill="url(#op-bg)"/>
+  <rect width="1400" height="320" fill="url(#dots-op)"/>
 
-  <!-- Frames -->
-  <rect x="5" y="5" width="1190" height="290" rx="0" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.4"/>
-  <rect x="10" y="10" width="1180" height="280" rx="0" fill="none" stroke="#000" stroke-width="5"/>
-  <rect x="14" y="14" width="1172" height="272" rx="0" fill="#fff"/>
+  <rect x="5" y="5" width="1390" height="310" rx="0" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.4"/>
+  <rect x="10" y="10" width="1380" height="300" rx="0" fill="none" stroke="#000" stroke-width="5"/>
+  <rect x="14" y="14" width="1372" height="292" rx="0" fill="#fff"/>
 
-  <!-- Cards at y=40, height 210, bottom at y=250 -->
-
-  <!-- INPUT: x=30..230 (width 200) -->
-  <g transform="translate(30, 40)">
-    <rect x="0" y="0" width="200" height="210" rx="12" fill="#FFFBF0" stroke="#D4A017" stroke-width="2"/>
-    <rect x="0" y="0" width="200" height="44" rx="12" fill="#D4A017"/>
-    <rect x="0" y="28" width="200" height="16" fill="#D4A017"/>
-    <text x="100" y="30" font-family="-apple-system, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="700" letter-spacing="2">INPUT</text>
-    <line x1="0" y1="44" x2="200" y2="44" stroke="#D4A017" stroke-width="1" opacity="0.3"/>
-    <rect x="16" y="64" width="168" height="40" rx="8" fill="#fff" stroke="#D4A017" stroke-width="1.2"/>
-    <text x="100" y="89" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="13" fill="#8B6914" text-anchor="middle" font-weight="600">参考图1 · 产品照片</text>
-    <rect x="16" y="116" width="168" height="40" rx="8" fill="#fff" stroke="#D4A017" stroke-width="1.2"/>
-    <text x="100" y="141" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="13" fill="#8B6914" text-anchor="middle" font-weight="600">参考图2 · 品牌LOGO</text>
-    <text x="100" y="180" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#888" text-anchor="middle">+ 主题 / 平台 / 内容类型</text>
-    <text x="100" y="200" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#aaa" text-anchor="middle">透明底PNG · 严格按参考还原</text>
+  <!-- Shared core: Image prompt, x=30..280 (width 250) -->
+  <g transform="translate(30, 45)">
+    <rect x="0" y="0" width="250" height="220" rx="12" fill="#fff" stroke="#D4A017" stroke-width="2.5"/>
+    <rect x="0" y="0" width="250" height="44" rx="12" fill="#D4A017"/>
+    <rect x="0" y="28" width="250" height="16" fill="#D4A017"/>
+    <text x="125" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="700" letter-spacing="1">核心 · AI图片提示词</text>
+    <line x1="0" y1="44" x2="250" y2="44" stroke="#D4A017" stroke-width="1.5"/>
+    <text x="16" y="72" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="13" fill="#000" font-weight="700">3:4竖版静图提示词</text>
+    <text x="16" y="94" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">主标题≤8字/行 ≤3行</text>
+    <text x="16" y="114" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">产品角度锁定 · LOGO植入</text>
+    <text x="16" y="134" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">9:16适配（元素居中）</text>
+    <rect x="16" y="150" width="130" height="20" rx="4" fill="#FFF3CD" stroke="#D4A017" stroke-width="0.8"/>
+    <text x="81" y="164" font-family="-apple-system, sans-serif" font-size="10" fill="#8B6914" text-anchor="middle" font-weight="600">GPT Image2 / Seedream</text>
+    <text x="16" y="192" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#999">代码块包裹 · 一键复制</text>
+    <text x="16" y="210" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#D4A017">风格参数记录 · 防同质化</text>
   </g>
 
   <!-- Arrow 1 -->
-  <g transform="translate(242, 145)" opacity="0.6">
-    <line x1="0" y1="0" x2="28" y2="0" stroke="#000" stroke-width="2.5"/>
-    <polygon points="28,-5 38,0 28,5" fill="#000"/>
+  <g transform="translate(292, 155)" opacity="0.6">
+    <line x1="0" y1="0" x2="24" y2="0" stroke="#000" stroke-width="2.5"/>
+    <polygon points="24,-5 34,0 24,5" fill="#000"/>
   </g>
 
-  <!-- OUTPUT 1: 封面图提示词, x=290..540 (width 250) -->
-  <g transform="translate(290, 40)">
-    <rect x="0" y="0" width="250" height="210" rx="12" fill="#fff" stroke="#000" stroke-width="2.5"/>
-    <rect x="0" y="0" width="250" height="44" rx="12" fill="#FF0000"/>
-    <rect x="0" y="28" width="250" height="16" fill="#FF0000"/>
-    <text x="125" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="700" letter-spacing="1">OUTPUT 1 · 封面图提示词</text>
-    <line x1="0" y1="44" x2="250" y2="44" stroke="#000" stroke-width="1.5"/>
-    <text x="16" y="72" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#000" font-weight="700">结构化中文提示词</text>
-    <text x="16" y="96" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#333" font-weight="500">3:4竖版 · 主标题缩略图可读</text>
-    <text x="16" y="118" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#333" font-weight="500">产品角度锁定 · LOGO 5-8%植入</text>
-    <text x="16" y="140" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#666">风格参数记录（防同质化追踪）</text>
-    <rect x="16" y="156" width="140" height="20" rx="4" fill="#FFF3CD" stroke="#D4A017" stroke-width="0.8"/>
-    <text x="86" y="170" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#8B6914" text-anchor="middle" font-weight="600">GPT Image2 / Seedream5.0</text>
-    <text x="16" y="198" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#999">代码块包裹 · 一键复制</text>
+  <!-- XHS package: x=336..586 (width 250) -->
+  <g transform="translate(336, 45)">
+    <rect x="0" y="0" width="250" height="220" rx="12" fill="#fff" stroke="#FF2442" stroke-width="2.5"/>
+    <rect x="0" y="0" width="250" height="44" rx="12" fill="#FF2442"/>
+    <rect x="0" y="28" width="250" height="16" fill="#FF2442"/>
+    <text x="125" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="700" letter-spacing="1">小红书图文包</text>
+    <line x1="0" y1="44" x2="250" y2="44" stroke="#FF2442" stroke-width="1.5"/>
+    <text x="16" y="72" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#000" font-weight="700">标题 + 正文（黄金三段式）</text>
+    <text x="16" y="94" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">5-10个标签（三层SEO）</text>
+    <text x="16" y="114" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">CTA（评论提问优先）</text>
+    <text x="16" y="134" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">发布时间 + 72h SOP</text>
+    <rect x="16" y="150" width="140" height="20" rx="4" fill="#FFF0F0" stroke="#FF2442" stroke-width="0.8"/>
+    <text x="86" y="164" font-family="-apple-system, sans-serif" font-size="10" fill="#D44" text-anchor="middle" font-weight="600">CES 3.0 · 评×4 关×8</text>
+    <text x="16" y="192" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#999">正文400字+ · emoji点缀</text>
+    <text x="16" y="210" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#999">作者自评 · 关键词OCR埋词</text>
   </g>
 
-  <!-- Plus 1 -->
-  <g transform="translate(552, 145)" opacity="0.7">
+  <!-- Plus -->
+  <g transform="translate(598, 155)" opacity="0.7">
     <circle cx="10" cy="0" r="12" fill="none" stroke="#000" stroke-width="1.5"/>
     <text x="10" y="5" font-family="-apple-system, sans-serif" font-size="16" fill="#000" font-weight="900" text-anchor="middle">+</text>
   </g>
 
-  <!-- OUTPUT 2: 小红书文案, x=582..832 (width 250) -->
-  <g transform="translate(582, 40)">
-    <rect x="0" y="0" width="250" height="210" rx="12" fill="#fff" stroke="#000" stroke-width="2.5"/>
-    <rect x="0" y="0" width="250" height="44" rx="12" fill="#FFD700"/>
-    <rect x="0" y="28" width="250" height="16" fill="#FFD700"/>
-    <text x="125" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#000" text-anchor="middle" font-weight="700" letter-spacing="1">OUTPUT 2 · 小红书文案</text>
+  <!-- Douyin package: x=632..882 (width 250) -->
+  <g transform="translate(632, 45)">
+    <rect x="0" y="0" width="250" height="220" rx="12" fill="#fff" stroke="#000" stroke-width="2.5"/>
+    <rect x="0" y="0" width="250" height="44" rx="12" fill="#000"/>
+    <rect x="0" y="28" width="250" height="16" fill="#000"/>
+    <text x="125" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#25F4EE" text-anchor="middle" font-weight="700" letter-spacing="1">抖音静图视频包</text>
     <line x1="0" y1="44" x2="250" y2="44" stroke="#000" stroke-width="1.5"/>
-    <text x="16" y="72" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#000" font-weight="700">吸睛标题（3候选）</text>
-    <text x="16" y="96" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#333" font-weight="500">400-800字正文 · emoji点缀</text>
-    <text x="16" y="118" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#333" font-weight="500">9种CTA轮换 · 钩子开头</text>
-    <text x="16" y="140" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#666">10-15个精准话题标签</text>
-    <rect x="16" y="156" width="150" height="20" rx="4" fill="#FFF0F0" stroke="#FF0000" stroke-width="0.8"/>
-    <text x="91" y="170" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#D44" text-anchor="middle" font-weight="600">文案补充图上信息</text>
-    <text x="16" y="198" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#999">无容量数字 · 品牌合规 · 无猿猴</text>
+    <text x="16" y="72" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#000" font-weight="700">视频标题 + 简洁描述</text>
+    <text x="16" y="94" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">5-6个标签 · CTA（收藏优先）</text>
+    <text x="16" y="114" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">AI音乐指引（情绪/BPM/风格）</text>
+    <text x="16" y="134" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">封面文字建议</text>
+    <rect x="16" y="150" width="150" height="20" rx="4" fill="#F0F0F0" stroke="#000" stroke-width="0.8"/>
+    <text x="91" y="164" font-family="-apple-system, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="600">静图+AI音乐 · 7天不删稿</text>
+    <text x="16" y="192" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#999">可跟热门BGM · 可选图文轮播</text>
+    <text x="16" y="210" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#999">收藏率第一权重 · 7天长尾赛马</text>
   </g>
 
-  <!-- Plus 2 -->
-  <g transform="translate(844, 145)" opacity="0.7">
+  <!-- Plus -->
+  <g transform="translate(894, 155)" opacity="0.7">
     <circle cx="10" cy="0" r="12" fill="none" stroke="#000" stroke-width="1.5"/>
     <text x="10" y="5" font-family="-apple-system, sans-serif" font-size="16" fill="#000" font-weight="900" text-anchor="middle">+</text>
   </g>
 
-  <!-- OUTPUT 3: 短视频脚本 (可选), x=874..1164 (width 290) -->
-  <g transform="translate(874, 40)">
-    <rect x="0" y="0" width="290" height="210" rx="12" fill="#FFFBF0" stroke="#000" stroke-width="2.5"/>
-    <rect x="0" y="0" width="290" height="44" rx="12" fill="#000"/>
-    <rect x="0" y="28" width="290" height="16" fill="#000"/>
-    <text x="130" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#FFD700" text-anchor="middle" font-weight="700" letter-spacing="1">OUTPUT 3 · 短视频脚本</text>
-    <!-- Optional badge -->
-    <rect x="210" y="12" width="62" height="20" rx="10" fill="#FF0000"/>
-    <text x="241" y="26" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">可选输出</text>
-    <line x1="0" y1="44" x2="290" y2="44" stroke="#000" stroke-width="1.5"/>
-    <text x="16" y="72" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="14" fill="#000" font-weight="700">抖音 / 视频号脚本</text>
-    <text x="16" y="96" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#333" font-weight="500">动态分镜 · 时长控制</text>
-    <text x="16" y="118" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#333" font-weight="500">6种前3秒钩子公式</text>
-    <text x="16" y="140" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#666">视频标题/描述 · 评论区引导</text>
-    <rect x="16" y="156" width="160" height="20" rx="4" fill="#FFF0F0" stroke="#FF0000" stroke-width="0.8"/>
-    <text x="96" y="170" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#D44" text-anchor="middle" font-weight="600">游戏类15-30s · 测试类20-35s</text>
-    <text x="16" y="198" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#999">5-8个视频话题标签 · 自带首评</text>
+  <!-- Video Account package: x=926..1176 (width 250) -->
+  <g transform="translate(926, 45)">
+    <rect x="0" y="0" width="250" height="220" rx="12" fill="#fff" stroke="#07C160" stroke-width="2.5"/>
+    <rect x="0" y="0" width="250" height="44" rx="12" fill="#07C160"/>
+    <rect x="0" y="28" width="250" height="16" fill="#07C160"/>
+    <text x="125" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="700" letter-spacing="1">视频号静图视频包</text>
+    <line x1="0" y1="44" x2="250" y2="44" stroke="#07C160" stroke-width="1.5"/>
+    <text x="16" y="72" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#000" font-weight="700">视频标题 + 社交描述</text>
+    <text x="16" y="94" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">5个标签 · CTA（转发优先）</text>
+    <text x="16" y="114" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">AI音乐指引（情感/怀旧/氛围）</text>
+    <text x="16" y="134" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#333">私域转发SOP（1小时内）</text>
+    <rect x="16" y="150" width="150" height="20" rx="4" fill="#F0FFF0" stroke="#07C160" stroke-width="0.8"/>
+    <text x="91" y="164" font-family="-apple-system, sans-serif" font-size="10" fill="#07C160" text-anchor="middle" font-weight="600">社交55%+算法45% · 转发最高</text>
+    <text x="16" y="192" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#999">有效评论≥8字 · 朋友圈+群转发</text>
+    <text x="16" y="210" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="9" fill="#999">好友点赞=5倍权重 · AI标注合规</text>
   </g>
-  <!-- Right edge: 874+290 = 1164, exactly at content edge -->
+
+  <!-- Right edge: 926+250 = 1176. Need room for workflow note -->
+  <g transform="translate(1190, 45)">
+    <rect x="0" y="0" width="180" height="220" rx="12" fill="#FFFBF0" stroke="#D4A017" stroke-width="1.5" stroke-dasharray="6,3"/>
+    <text x="90" y="30" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="12" fill="#D4A017" text-anchor="middle" font-weight="700">视频形式说明</text>
+    <line x1="10" y1="44" x2="170" y2="44" stroke="#D4A017" stroke-width="1" opacity="0.3"/>
+    <text x="16" y="70" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#666">静图 + AI背景音乐</text>
+    <text x="16" y="92" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#666">无口播 · 无分镜 · 无运镜</text>
+    <text x="16" y="114" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="11" fill="#666">音乐是唯一动态元素</text>
+    <line x1="10" y1="130" x2="170" y2="130" stroke="#D4A017" stroke-width="1" opacity="0.3"/>
+    <text x="16" y="150" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="10" fill="#888">图片3:4生成</text>
+    <text x="16" y="168" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="10" fill="#888">视频端9:16上下填充</text>
+    <text x="16" y="186" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="10" fill="#888">时长匹配音乐自然长度</text>
+    <text x="16" y="208" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" font-size="10" fill="#888">核心元素集中在中间区域</text>
+  </g>
 
 </svg>
