@@ -322,8 +322,14 @@
 
 ```
 bored-whisky-xhs/
-├── SKILL.md              # Skill主文件（完整模板体系、视觉风格、文案规则、三平台策略、AI音乐指引）
-├── brand.md              # 品牌知识库（品牌DNA、用户画像、核心词汇、瓶身/LOGO/容量规则）
+├── SKILL.md              # Skill入口文件（核心哲学+数据原则+问题流程+模块索引）
+├── brand.md              # 品牌知识库（品牌DNA、IP限制、视觉规范、产品规格）
+├── templates.md          # 9大内容模板（T1-T9）详细画面结构与规则
+├── visual-system.md      # 视觉设计系统（10种风格+8配色+8构图+装饰/背景/字体/光影）
+├── copywriting.md        # 文案系统（12种标题公式+Emoji规范+9种文案结构+CTA+月度日历）
+├── music-guide.md        # AI音乐指引（情绪/BPM/风格+有歌词无歌词匹配+时长规则+歌词指引）
+├── platform-strategy.md  # 三平台策略（小红书CES3.0/抖音2026/视频号双引擎+发布SOP）
+├── output-spec.md        # 输出规范（19维防同质化检查+提示词规范+一图三包输出模板）
 ├── assets/
 │   └── readme/           # README视觉插图（SVG）
 └── README.md             # 本文件
