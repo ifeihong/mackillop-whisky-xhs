@@ -1,4 +1,4 @@
 interface:
   display_name: "马克瑞普之选 小红书图文"
-  short_description: "为"马克瑞普之选"单一单桶系列威士忌 - 亚伯乐1996 生成小红书图片提示词和文案内容，内置品牌 DNA 和 9 大模板体系"
+  short_description: "为"马克瑞普之选"单一单桶系列威士忌 - 亚伯乐1996 生成小红书图片提示词和文案内容，内置品牌 DNA 和 7 大模板体系"
   default_prompt: "Use $mackillop-whisky-xhs to create Xiaohongshu content for Mackillop's Choice Aberlour 1996, including image generation prompts and copywriting."

@@ -9,10 +9,10 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/内容类型-10种-blue?style=flat-square" alt="10种内容类型">
-  <img src="https://img.shields.io/badge/图文模板-9大核心-blue?style=flat-square" alt="9大核心模板">
-  <img src="https://img.shields.io/badge/视觉风格-11种-orange?style=flat-square" alt="11种视觉风格">
-  <img src="https://img.shields.io/badge/配色方案-10种-green?style=flat-square" alt="10种配色">
+  <img src="https://img.shields.io/badge/内容类型-9种-blue?style=flat-square" alt="9种内容类型">
+  <img src="https://img.shields.io/badge/图文模板-7大核心-blue?style=flat-square" alt="7大核心模板">
+  <img src="https://img.shields.io/badge/视觉风格-9种-orange?style=flat-square" alt="9种视觉风格">
+  <img src="https://img.shields.io/badge/配色方案-8种-green?style=flat-square" alt="8种配色">
   <img src="https://img.shields.io/badge/适配模型-GPT%20Image2%20|%20Seedream%20|%20Nano%20Banana-green?style=flat-square" alt="多模型适配">
   <img src="https://img.shields.io/badge/辅助分发-抖音%20|%20视频号-red?style=flat-square" alt="辅助视频分发">
 </p>
@@ -23,7 +23,9 @@
 
 系统基于 [bored-whisky-xhs](https://github.com/ifeihong/bored-whisky-xhs) v7.3 架构完整移植，品牌信息全面替换为"马克瑞普之选"单一单桶系列威士忌 - 亚伯乐1996产品信息。
 
-系统内置10种内容类型、9大图文模板、11种视觉风格、10套配色方案、丰富的装饰组件和素材库，组合空间超8000万种，配合21维防同质化检查，确保每日内容持续有新意、不重复。覆盖账号日常运营全场景。
+**v1.1 高奢品牌定位优化版**：针对产品高奢定位（7888元/30年/184瓶/PX雪莉桶/高净值人群），全面升级视觉系统、文案系统、音乐系统，删除低龄化内容类型（游戏挑战/人格测试），补入品鉴笔记型和收藏指南型等高匹配内容类型。详见 [SKILL-GAP-ANALYSIS.md](SKILL-GAP-ANALYSIS.md)。
+
+系统内置9种内容类型、7大图文模板、9种视觉风格、8套配色方案，丰富的装饰组件和素材库，组合空间超8000万种，配合21维防同质化检查，确保每日内容持续有新意、不重复。覆盖账号日常运营全场景。
 
 ---
 
